@@ -1,0 +1,46 @@
+@use "../../../variables" as v;
+
+.restaurant-filter {
+  display: flex;
+  margin: v.$container-padding;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(212, 209, 209);
+}
+
+.res-number {
+  flex: 1;
+  font-weight: 600;
+  font-size: 16px;
+  color: #282c3f;
+  letter-spacing: 0;
+}
+
+.filter-items {
+  flex: 2;
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+  justify-content: space-around;
+
+  .item {
+    color: #3d4152;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .relevence {
+    position: relative;
+    color: black;
+  }
+}
+
+.relevence::after {
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: -34px;
+
+  border-bottom: 2px solid black;
+}
