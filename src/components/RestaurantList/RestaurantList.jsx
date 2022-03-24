@@ -6,7 +6,7 @@ import "./RestaurantList.styles.scss";
 export const RestaurantList = () => {
   const [restaurantList, setRestaurantList] = useState([]);
   const [page, setPage] = useState(1);
-  const [isFetching, setIsFetching] = useState(false);
+  // const [isFetching, setIsFetching] = useState(false);
 
   const getRestaurantList = async (page) => {
     var requestOptions = {

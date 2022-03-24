@@ -9,13 +9,16 @@ import {
   faSearch,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
     <div className="header">
       <div className="logo-and-location-container">
         <div>
-          <img src="/swiggy2.png" alt="logo" className="logo-image" />
+          <Link to="/">
+            <img src="/swiggy2.png" alt="logo" className="logo-image" />
+          </Link>
         </div>
         <div className="location">
           <span className="area">Jayanagar</span>
@@ -55,4 +58,3 @@ export const Header = () => {
     </div>
   );
 };
-

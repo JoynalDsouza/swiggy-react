@@ -1,0 +1,34 @@
+@use "../../../variables" as v;
+
+.restaurant-summary {
+  display: flex;
+  padding: 34px 76px 10px;
+  background-color: v.$container-background-color;
+  color: white;
+  justify-content: space-between;
+
+  .summary-img {
+    flex: 1;
+    margin-bottom: 10px;
+
+    img {
+      width: 254px;
+      height: 165px;
+    }
+  }
+
+  .summary-details {
+    flex: 2;
+    align-self: flex-end;
+  }
+
+  .discount-offer {
+    flex: 1;
+    border: 1px solid white;
+    position: relative;
+    align-self: flex-end;
+
+    padding: 35px 20px 20px;
+    justify-content: space-evenly;
+  }
+}

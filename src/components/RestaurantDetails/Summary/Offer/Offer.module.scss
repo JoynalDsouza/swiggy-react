@@ -1,0 +1,17 @@
+@use '../../../../variables' as v;
+
+.icons{
+   padding-right: 10px ;
+   }
+
+.offer{
+    position: absolute;
+    top : -22px;
+    left: -20px;
+    font-size: 1.45em;
+    font-weight: 600;
+   z-index: 2;
+   padding: 10px;
+   background-color: v.$container-background-color;
+
+}
