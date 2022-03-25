@@ -1,0 +1,89 @@
+.restaurant-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.5rem 0rem;
+  margin: 0 0 0.7rem 0;
+  border-radius: 4px;
+  width: 254px;
+  border: 1px solid #fff;
+}
+.restaurant-card:hover {
+  border-color: #d3d5df;
+  box-shadow: 0 0px 2px 0px rgba(41, 48, 63, 0.25);
+}
+
+.restaurant-items {
+  color: #686b78;
+  font-size: 0.9rem;
+}
+
+.restaurant-image {
+  width: 254px;
+  height: 160px;
+  aspect-ratio: auto 260/160;
+}
+
+.restaurant-name {
+  margin: 0.3rem 0px 0px;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.restaurant-reviews {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+}
+
+.rating-container {
+  display: flex;
+  border-radius: 3px;
+  background-color: green;
+  padding: 0.3rem;
+  color: white;
+}
+
+.star {
+  margin-right: 5px;
+}
+
+.restaurant-offer {
+  display: flex;
+  font-size: 0.9rem;
+  color: brown;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid #fff;
+  padding: 10px 0px;
+}
+
+.discount {
+  margin-left: 10px;
+}
+
+.quick-view {
+  color: lightseagreen;
+  font-size: 0.9rem;
+  margin: 0.5rem auto;
+  visibility: hidden;
+  padding: 5px 0px;
+}
+.quick-view:hover {
+  color: grey;
+  cursor: pointer;
+}
+
+.restaurant-card:hover .quick-view {
+  visibility: visible;
+}
+
+.restaurant-card:hover .restaurant-offer {
+  border-color: gray;
+}
+
+.weight-800 {
+  font-weight: 800;
+}/*# sourceMappingURL=RestaurantCard.styles.css.map */

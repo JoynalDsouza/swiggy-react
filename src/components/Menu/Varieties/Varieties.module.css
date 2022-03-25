@@ -1,0 +1,19 @@
+.varietiesContainer {
+  display: flex;
+  width: 254px;
+  padding-top: 80px;
+  padding-right: 50px;
+  height: 100vh;
+  box-sizing: border-box;
+  flex-direction: column;
+  border-right: 1px solid #93959f;
+  align-items: flex-end;
+}
+
+.variety {
+  margin: 0px 0px 15px;
+  color: #282c3f;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+}/*# sourceMappingURL=Varieties.module.css.map */

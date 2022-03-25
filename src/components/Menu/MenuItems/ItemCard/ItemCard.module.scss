@@ -1,0 +1,46 @@
+.itemCardContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 120px;
+}
+
+.itemImg {
+  width: 118px;
+  height: 96px;
+  border-radius: 6px;
+}
+
+.imgButton {
+  position: relative;
+}
+
+.addButton {
+  color: #60b246;
+  cursor: pointer;
+  position: absolute;
+  padding: 5px;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 96px;
+}
+.addButton:hover {
+  box-shadow: 0 2px 8px #d4d5d9;
+}
+
+.dishName{
+    color: #3e4152;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.dishPrice{
+    color: #3e4152;
+    font-size: 14px;
+    font-weight: 400;
+}
+.dishDetails{
+    color:rgba(40,44,63,.45);
+    line-height: 1.3;
+    font-size: 14px;
+}

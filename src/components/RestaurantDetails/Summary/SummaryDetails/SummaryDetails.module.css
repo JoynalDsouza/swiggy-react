@@ -1,0 +1,30 @@
+.name {
+  font-size: 29px;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.items,
+.address {
+  color: #93959f;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.ratings {
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cft, .deliveryTime, .ratingCount {
+  font-size: 11px;
+  color: #93959f;
+  margin-bottom: 0;
+}
+
+.rating, .deliveryTimeContainer {
+  padding-right: 20px;
+  border-right: 1px solid #93959f;
+  margin-right: 20px;
+}/*# sourceMappingURL=SummaryDetails.module.css.map */
