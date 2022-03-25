@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router";
+import { Menu } from "../components/Menu/Menu";
 import { RestaurantDetails } from "../components/RestaurantDetails/RestaurantDetails";
 
 export const RestaurantDetailsPage = () => {
@@ -19,7 +20,6 @@ export const RestaurantDetailsPage = () => {
     );
 
     const responseJson = await response.json();
-    console.log(responseJson.data);
     return responseJson.data;
   };
 
@@ -29,8 +29,11 @@ export const RestaurantDetailsPage = () => {
     });
   }, [params.id]);
   return (
-    <div>
-      {restaurantData && <RestaurantDetails details={restaurantData} />}
-    </div>
+    <>
+      <div>
+        {restaurantData && <RestaurantDetails details={restaurantData} />}
+      </div>
+      <Menu></Menu>
+    </>
   );
 };

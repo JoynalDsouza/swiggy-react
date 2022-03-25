@@ -1,0 +1,25 @@
+@use "../../variables" as v;
+
+.menuContainer {
+  display: flex;
+  padding: v.$container-padding;
+  box-sizing: border-box;
+}
+
+.varieties{
+    flex : 1;
+
+}
+
+.menuItems{
+    flex: 2;
+    
+    padding-top: 80px;
+
+}
+
+.cart{
+    flex: 1;
+    padding-top: 80px;
+
+}
