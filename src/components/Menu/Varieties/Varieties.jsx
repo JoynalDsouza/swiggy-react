@@ -6,9 +6,9 @@ export const Varieties = ({ varieties }) => {
     <div className={s.varietiesContainer}>
       {varieties &&
         varieties.map((item, index) => (
-          <div className={s.variety} key={index}>
+          <a href={`#${item}`} className={s.variety} key={index}>
             {item}
-          </div>
+          </a>
         ))}
     </div>
   );

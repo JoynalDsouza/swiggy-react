@@ -1,5 +1,7 @@
 .cartContainer {
-  width: 100%;
+  position: sticky;
+  top: 90px;
+
 }
 .emptyCartImg {
   opacity: 0.5;

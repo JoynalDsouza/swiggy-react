@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   padding: 1.5rem 1.5rem 0rem;
-  margin: 0 0 0.7rem 0;
+  // margin: 0 0 0.6rem 0;
   border-radius: 4px;
-  width: 254px;
+  width: 250px;
   border: 1px solid #fff;
   &:hover {
     border-color: #d3d5df;
@@ -17,9 +17,9 @@
 }
 
 .restaurant-image {
-  width: 254px;
+  width: 250px;
   height: 160px;
-  aspect-ratio: auto 260 / 160;
+  aspect-ratio: auto 250 / 160;
 }
 
 .restaurant-name {

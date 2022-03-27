@@ -4,9 +4,9 @@ import { RestuarantFilter } from "./RestaurantFilter/RestuarantFilter";
 import "./RestaurantList.styles.scss";
 
 export const RestaurantList = () => {
-  const [restaurantList, setRestaurantList] = useState([]);
   const [page, setPage] = useState(1);
-  // const [isFetching, setIsFetching] = useState(false);
+  const [restaurantList, setRestaurantList] = useState([]);
+
 
   const getRestaurantList = async (page) => {
     var requestOptions = {
@@ -29,7 +29,20 @@ export const RestaurantList = () => {
     getRestaurantList(page).then((result) => {
       setRestaurantList((prevState) => [...prevState, ...result.restaurants]);
     });
+
+    
   }, [page]);
+
+  const scrollToEnd = () => {
+    setPage(page+1)
+  }
+
+  window.onscroll = function(){
+    if(
+      window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight && page < 7){
+        scrollToEnd()
+      }
+  }
 
   return (
     <>
