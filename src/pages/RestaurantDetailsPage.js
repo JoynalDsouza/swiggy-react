@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import { Menu } from "../components/Menu/Menu";
-import { RestaurantDetails } from "../components/RestaurantDetails/RestaurantDetails";
+import { Breadcrumb } from "../components/RestaurantDetails/Breadcrumb/Breadcrumb";
+import { Summary } from "../components/RestaurantDetails/Summary/Summary";
 
 export const RestaurantDetailsPage = () => {
   const [restaurantData, setRestaurantData] = useState([]);
@@ -31,7 +32,12 @@ export const RestaurantDetailsPage = () => {
   return (
     <>
       <div>
-        {restaurantData && <RestaurantDetails details={restaurantData} />}
+        {restaurantData && (
+          <>
+            <Breadcrumb name={restaurantData.name} />
+            <Summary details={restaurantData} />
+          </>
+        )}
       </div>
       <Menu></Menu>
     </>

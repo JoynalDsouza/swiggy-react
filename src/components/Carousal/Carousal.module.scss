@@ -1,0 +1,56 @@
+@use "../../variables" as v;
+
+.carousalContainer {
+  background-color: hsl(230, 22%, 20%);
+  padding: 125px 76px 45px;
+  position: relative;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  display: flex;
+  scroll-snap-type: mandatory;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.slideBar {
+  display: flex;
+  position: relative;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  border-radius: 50%;
+  background-color: white;
+  width: 47px;
+  height: 47px;
+  transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  z-index: 2;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  top: 52%;
+}
+
+.arrow:hover .rarrow {
+  transform: translate(14%);
+}
+
+.arrow:hover .larrow {
+  transform: translate(-14%);
+}
+
+.left {
+  left: 30px;
+}
+
+.right {
+  right: 30px;
+}

@@ -1,10 +1,12 @@
-import React from 'react'
-import { RestaurantList } from '../components/RestaurantList/RestaurantList'
+import React from "react";
+import { Carousal } from "../components/Carousal/Carousal";
+import { RestaurantList } from "../components/RestaurantList/RestaurantList";
 
 export const HomePage = () => {
   return (
     <>
-    <RestaurantList />
+      <Carousal />
+      <RestaurantList />
     </>
-  )
-}
+  );
+};
