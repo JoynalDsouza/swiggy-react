@@ -1,29 +1,27 @@
-@use '../../../variables' as v;
+@use "../../../variables" as v;
 
-
-.varietiesContainer{
-    display: flex;
-    width: 254px;
-    padding-top: 80px;
-    padding-right: 50px;
-    height: 100vh;
-    box-sizing: border-box;
-    flex-direction: column;
-    border-right: 1px solid v.$light-grey;
-    align-items: flex-end;
-    position: sticky;
-    top: 10px;
+.varietiesContainer {
+  display: flex;
+  width: 254px;
+  padding-top: 95px;
+  padding-right: 50px;
+  height: 100vh;
+  box-sizing: border-box;
+  flex-direction: column;
+  border-right: 1px solid v.$light-grey;
+  align-items: flex-end;
+  position: sticky;
+  top: 10px;
 }
 
-.variety{
-    margin: 0px 0px 15px;
-    color: #282c3f;
-    font-size: 15px;
-    font-weight: 400;
-    cursor: pointer;
+.variety {
+  margin: 0px 0px 15px;
+  color: #282c3f;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
 }
 
-.variety:active{
-    color: v.$swiggy-color;
-    
+.variety:active {
+  color: v.$swiggy-color;
 }
